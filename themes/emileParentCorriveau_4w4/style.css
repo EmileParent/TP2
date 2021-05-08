@@ -53,6 +53,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Lien du menu principal */
 /* Lien du .site-title */
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,400;0,600;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap");
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -546,15 +547,11 @@ a:hover, a:active {
 .main-navigation
 -------------------------------------------------------------------------------- */
 .main-navigation a {
-  color: #e0df8d;
-}
-
-.main-navigation a:visited {
-  color: #f1dc67;
+  color: #ffc46c;
 }
 
 .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
-  color: #f9f9fb;
+  color: #ff9419;
 }
 
 .main-navigation a:focus {
@@ -569,23 +566,11 @@ a:hover, a:active {
 	.site-title
 	-------------------------------------------------------------------------------- */
 .site-title a {
-  color: #0a1538;
+  color: #fffddb;
 }
 
-.site-title a:visited {
-  color: #1f2858;
-}
-
-.site-title a:hover, .site-title a:focus, .site-title a:active {
-  color: #2727a1;
-}
-
-.site-title a:focus {
-  outline: thin dotted;
-}
-
-.site-title a:hover, .site-title a:active {
-  outline: 0;
+.site-title:hover a:hover {
+  color: #e4e1b7;
 }
 
 /* Forms
@@ -745,6 +730,7 @@ html, body {
 --------------------------------------------- */
 /* Animation du menu sur grans écran */
 .main-navigation {
+  font-family: 'Josefin Sans';
   display: block;
   width: 100%;
 }
@@ -752,8 +738,8 @@ html, body {
 .main-navigation ul {
   list-style: none;
   margin: 0;
-  background-color: #002746;
-  font-size: 1rem;
+  background-color: #222222;
+  font-size: 1.3rem;
   width: 100vw;
   z-index: 1;
   transition: height .5s, opacity .5s;
@@ -762,7 +748,6 @@ html, body {
 }
 
 .main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
   top: 100%;
@@ -771,7 +756,7 @@ html, body {
   transition: all 0.25s cubic-bezier(0, 0.99, 0, 1);
   z-index: 99999;
   height: fit-content !important;
-  background-color: ligthen(#002746, 10%);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .main-navigation ul ul li a {
@@ -801,6 +786,11 @@ html, body {
   text-decoration: none;
   font-weight: normal;
   border-bottom: 1px dotted #fafbfc;
+}
+
+.sub-menu .menu-item {
+  background-image: url("img/fondSubNav.jpg");
+  background-size: auto;
 }
 
 /* -----------------------------------------------------------------------------
@@ -871,7 +861,7 @@ Ouverture du menu
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 2.5rem;
+    height: 2.9rem;
     opacity: 1;
   }
   .main-navigation.toggled ul li a,
@@ -1215,8 +1205,9 @@ body.home {
 }
 
 .site-branding .site-title {
+  text-align: center;
   font-family: 'Anton';
-  font-size: clamp(0.9rem, -0.875rem + 5.333vw, 3.5rem);
+  font-size: clamp(2.5rem, -0.875rem + 5.333vw, 3.5rem);
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -1228,6 +1219,7 @@ body.home {
 }
 
 .site-branding .site-description {
+  text-align: center;
   font-size: clamp(0.7rem, -0.875rem + 8.333vw, 2rem);
   margin: 0;
   padding: 0;
@@ -1275,6 +1267,11 @@ body.home {
   width: 70%;
   margin: auto;
   margin-top: 20px;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
 /* Local/burger
