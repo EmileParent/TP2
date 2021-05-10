@@ -29,7 +29,7 @@ body.home {
     .site-title {
         text-align: center;
         font-family: 'Anton';
-        font-size: clamp(2.5rem, #{"-0.875rem + 5.333vw"}, 3.5rem);
+        font-size: clamp(2.5rem, #{"-0.875rem + 5.333vw"}, 4rem);
         font-weight: bold;
         margin: 0;
         padding: 0;
@@ -51,7 +51,7 @@ body.home {
 
 
 .home {
-    
+
     .entry-title {
         font-size : clamp(1.5rem, #{"-0.875rem + 8.333vw"}, 4rem);
     }
@@ -72,6 +72,19 @@ body.home {
     }
 }
 
+header {
+
+    h2 {
+        text-align: center;
+        font-size: clamp(2rem, #{"-0.875rem + 5.333vw"}, 3rem);
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+}
+
 .accueil {
     
     font-size : clamp(.7rem, #{"-0.875rem + 8.333vw"}, 1.5rem);
@@ -89,6 +102,10 @@ body.home {
 
 }
 
+.cours-acceuil {
+    width: 80%;
+}
+
 .nouvelles {
 
     width: 70%;
@@ -99,4 +116,9 @@ body.home {
 p {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+}
+
+h2 {
+    font-family: 'Josefin Sans';
+    text-align: left;
 }

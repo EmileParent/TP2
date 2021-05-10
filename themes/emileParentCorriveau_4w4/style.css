@@ -942,6 +942,15 @@ Ouverture du menu
 }
 
 /* ------------------------------------------------------------------------
+Version mobile et tablette
+--------------------------------------------------------------------------*/
+@media (max-width: 1023px) {
+  .main-navigation a {
+    font-size: 1.1rem;
+  }
+}
+
+/* ------------------------------------------------------------------------
 Animation du sous menu
 -------------------------------------------------------------------------- */
 @keyframes anim-sous-menu {
@@ -1207,7 +1216,7 @@ body.home {
 .site-branding .site-title {
   text-align: center;
   font-family: 'Anton';
-  font-size: clamp(2.5rem, -0.875rem + 5.333vw, 3.5rem);
+  font-size: clamp(2.5rem, -0.875rem + 5.333vw, 4rem);
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -1248,6 +1257,16 @@ body.home {
   }
 }
 
+header h2 {
+  text-align: center;
+  font-size: clamp(2rem, -0.875rem + 5.333vw, 3rem);
+}
+
+header p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
 .accueil {
   font-size: clamp(0.7rem, -0.875rem + 8.333vw, 1.5rem);
   width: 100vw;
@@ -1263,6 +1282,10 @@ body.home {
   margin: 0 auto;
 }
 
+.cours-acceuil {
+  width: 80%;
+}
+
 .nouvelles {
   width: 70%;
   margin: auto;
@@ -1272,6 +1295,11 @@ body.home {
 p {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
+}
+
+h2 {
+  font-family: 'Josefin Sans';
+  text-align: left;
 }
 
 /* Local/burger
@@ -1415,18 +1443,36 @@ Les blocs de cours
 
 .cours-accueil h2 {
   width: 100%;
-  font-size: 3rem;
-  text-align: center;
+  font-size: 4rem;
+  text-align: left;
   padding: 0;
-  margin: 10px auto 0 auto;
+  margin: 10px auto 0 8%;
+}
+
+@media (max-width: 1023px) {
+  .cours-accueil h2 {
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .bloc {
-  width: 100vw;
+  width: 70vw;
   height: 30%;
+  margin: auto;
+  padding: 0 5% 0 5%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: rgba(82, 49, 19, 0.39);
+  border-radius: 30px;
+}
+
+@media (max-width: 1023px) {
+  .bloc {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+  }
 }
 
 .bloc article {
@@ -1438,6 +1484,9 @@ Les blocs de cours
   width: 92%;
   border: 1px solid #aaa;
   margin: 4%;
+  background-image: url(img/fondBloc.png);
+  border-radius: 15px;
+  border: none;
   /*
      
         */
@@ -1471,9 +1520,10 @@ Les blocs de cours
 .bloc article a {
   display: block;
   text-align: center;
-  font-size: clamp(1rem, -0.875rem + 8.333vw, 3rem);
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 2.3rem);
   text-decoration: none;
   font-weight: bold;
+  font-family: Josefin Sans;
 }
 
 .Web article {

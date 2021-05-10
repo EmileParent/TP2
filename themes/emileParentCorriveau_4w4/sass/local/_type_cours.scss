@@ -10,20 +10,34 @@ Les blocs de cours
     align-items: flex-start;
     h2 {
         width : 100%;
-        font-size: 3rem;
-        text-align: center;
+        font-size: 4rem;
+        text-align: left;
         padding : 0;
-        margin:10px auto 0 auto;
+        margin:10px auto 0 8%;
+
+        @include media-tablet {
+            text-align: center;
+            margin: 0;
+        }
     }
 }
 
 
 .bloc {
-    width: 100vw;
+    width: 70vw;
     height: 30%;
+    margin: auto;
+    padding: 0 5% 0 5%;
     display : flex;
     flex-direction : row;
     flex-wrap: wrap;
+    background-color: rgba(82, 49, 19, 0.39);
+    border-radius: 30px;
+
+    @include media-tablet {
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+    }
     // border : 1px solid #999;
     article {
         position : relative;
@@ -34,6 +48,9 @@ Les blocs de cours
         width : 92%;
         border : 1px solid #aaa;
         margin : 4%;
+        background-image: url(img/fondBloc.png);
+        border-radius: 15px;
+        border: none;
         /*
      
         */
@@ -45,10 +62,10 @@ Les blocs de cours
             display : block;
             text-align: center;
             // font-size: 2.5rem;
-            font-size : clamp(1rem, #{"-0.875rem + 8.333vw"}, 3rem);
+            font-size : clamp(1rem, #{"-0.875rem + 8.333vw"}, 2.3rem);
             text-decoration: none;
             font-weight: bold;
-            
+            font-family: Josefin Sans;
         }
    /*
       &::after{
