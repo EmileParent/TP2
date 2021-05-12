@@ -22,4 +22,10 @@
 	}
 }
 
+@mixin media-phone {
+	@media (max-width: 770px) {
+		@content;
+	}
+}
+
 

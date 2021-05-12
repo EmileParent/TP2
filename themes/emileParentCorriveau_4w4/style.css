@@ -1302,6 +1302,21 @@ h2 {
   text-align: left;
 }
 
+@media (max-width: 770px) {
+  #secondary {
+    font-size: 0.7rem;
+    text-align: center;
+    position: sticky;
+    margin-right: 20%;
+  }
+  #secondary h2 {
+    text-align: center;
+  }
+  #secondary #cat {
+    font-size: 0.8rem;
+  }
+}
+
 .infoSite {
   font-family: 'Raleway', sans-serif;
   padding-top: 10%;
@@ -1319,8 +1334,7 @@ Animation du bouton burger
   position: relative;
   width: 2rem;
   height: 2rem;
-  background-color: #fff;
-  border-radius: 50%;
+  background-color: #381500;
   overflow: hidden;
 }
 
@@ -1333,17 +1347,17 @@ Animation du bouton burger
 }
 
 #burger div:nth-of-type(1) {
-  background-color: #3ddada;
+  background-color: white;
   clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
 }
 
 #burger div:nth-of-type(2) {
-  background-color: #3d79da;
+  background-color: white;
   clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
 }
 
 #burger div:nth-of-type(3) {
-  background-color: #dab03d;
+  background-color: white;
   clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
 }
 

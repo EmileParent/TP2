@@ -123,6 +123,28 @@ h2 {
     text-align: left;
 }
 
+#secondary {
+
+    @include media-phone {
+
+        font-size: 0.7rem;
+        text-align: center;
+
+        h2 {
+            text-align: center;
+        }
+
+        position: sticky;
+        margin-right: 20%;
+
+        #cat {
+            font-size: 0.8rem;
+        }
+
+    }
+
+}
+
 .infoSite {
     font-family: 'Raleway', sans-serif;
     padding-top: 10%;
