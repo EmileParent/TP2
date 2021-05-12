@@ -17,6 +17,9 @@
 				<?php dynamic_sidebar('footer-1'); ?>
 			<?php endif ?>
 		</div>
+		<div class="infoSite">
+				Site par Émile Parent Corriveau - 4w4
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
