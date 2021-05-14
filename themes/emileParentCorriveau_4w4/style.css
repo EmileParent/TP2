@@ -524,15 +524,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #152f7c;
+  color: #72412e;
 }
 
 a:visited {
-  color: #081a2f;
+  color: #2e2f08;
 }
 
 a:hover, a:focus, a:active {
-  color: #0f8a2a;
+  color: #99721f;
 }
 
 a:focus {
@@ -970,11 +970,6 @@ Animation du sous menu
   display: block;
 }
 
-.post,
-.page {
-  margin: 0 0 1.5em;
-}
-
 .updated:not(.published) {
   display: none;
 }
@@ -1290,6 +1285,23 @@ header p {
   width: 70%;
   margin: auto;
   margin-top: 20px;
+}
+
+@media (min-width: 800px) {
+  .post {
+    border: 0.3rem solid rgba(182, 88, 0, 0.233);
+    padding: 1%;
+    margin: 3% 10% 3% 10%;
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 1.4rem);
+  }
+  .post header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+}
+
+.slide__conteneur {
+  display: none;
 }
 
 p {

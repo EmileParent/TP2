@@ -113,6 +113,27 @@ header {
     margin-top: 20px;
 }
 
+.post {
+    @include media-desktop {
+        border: 0.3rem solid rgba(182, 88, 0, 0.233);
+        padding: 1%;
+        margin: 3% 10% 3% 10%;
+        font-size: clamp(1rem, #{"-0.875rem + 8.333vw"}, 1.4rem);
+
+        header {
+
+            h1 {
+                margin: 0;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.slide__conteneur {
+    display: none;
+}
+
 p {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
