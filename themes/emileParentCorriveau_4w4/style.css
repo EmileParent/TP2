@@ -569,8 +569,12 @@ a:hover, a:active {
   color: #fffddb;
 }
 
+.site-title:hover {
+  transform: rotate(2deg) scale(105%);
+}
+
 .site-title:hover a:hover {
-  color: #e4e1b7;
+  color: #e4e1b8;
 }
 
 /* Forms
